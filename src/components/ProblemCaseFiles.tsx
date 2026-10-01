@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { PhoneCall, CalendarCheck2, History, ArrowRight, CheckCircle2, ShieldCheck, Sparkles, Navigation } from 'lucide-react';
 
+import techIpadDispatchImg from '../assets/images/tech_ipad_dispatch_1790687683270.jpg';
+import dispatcherOperationsImg from '../assets/images/dispatcher_operations_desk_1790596113772.jpg';
+import customerTrustImg from '../assets/images/customer_technician_trust_1790596123701.jpg';
+
 export const ProblemCaseFiles: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'voice' | 'dispatch' | 'recovery'>('voice');
 
@@ -71,7 +75,7 @@ export const ProblemCaseFiles: React.FC = () => {
           {/* Integrated Editorial Photo Container */}
           <div className="relative h-64 sm:h-72 w-full overflow-hidden bg-slate-100 mt-2">
             <img 
-              src="/src/assets/images/tech_ipad_dispatch_1790687683270.jpg" 
+              src={techIpadDispatchImg} 
               alt="Technician reviewing work order details on iPad tablet facing worker" 
               className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-500"
               referrerPolicy="no-referrer"
@@ -122,7 +126,7 @@ export const ProblemCaseFiles: React.FC = () => {
 
           <div className="relative h-56 sm:h-64 w-full overflow-hidden bg-slate-100 mt-2">
             <img 
-              src="/src/assets/images/dispatcher_operations_desk_1790596113772.jpg" 
+              src={dispatcherOperationsImg} 
               alt="Trade company operations room showing dispatch routes" 
               className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-500"
               referrerPolicy="no-referrer"
@@ -192,7 +196,7 @@ export const ProblemCaseFiles: React.FC = () => {
 
         <div className="lg:col-span-5 relative min-h-[280px] lg:min-h-full bg-slate-100 overflow-hidden">
           <img 
-            src="/src/assets/images/customer_technician_trust_1790596123701.jpg" 
+            src={customerTrustImg} 
             alt="Licensed technician consulting with homeowner on options" 
             className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-500"
             referrerPolicy="no-referrer"

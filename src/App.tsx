@@ -31,6 +31,12 @@ import {
 } from 'lucide-react';
 import { AuditApplicationModal } from './components/AuditApplicationModal';
 
+// Direct ES image imports so Vite bundles and hashes them for production deployments
+import heroFleetImg from './assets/images/hero_contractor_fleet_1790858335837.jpg';
+import scenarioUnderSinkImg from './assets/images/scenario_under_sink_1790858349368.jpg';
+import scenarioRoofWorkerImg from './assets/images/scenario_roof_worker_1790858360425.jpg';
+import scenarioVacationFreedomImg from './assets/images/scenario_vacation_freedom_1790858369722.jpg';
+
 interface HourlyCallData {
   hour: string;
   label: string;
@@ -477,7 +483,7 @@ export default function App() {
         {/* Real Fleet Visual Showcase Banner */}
         <div className="heroFleetBanner">
             <img 
-              src="/src/assets/images/hero_contractor_fleet_1790858335837.jpg" 
+              src={heroFleetImg} 
               alt="Professional contractor service vehicles ready for 24/7 autonomous dispatch" 
               referrerPolicy="no-referrer"
             />
@@ -535,7 +541,7 @@ export default function App() {
             <div className="scenarioCard">
               <div>
                 <img 
-                  src="/src/assets/images/scenario_under_sink_1790858349368.jpg" 
+                  src={scenarioUnderSinkImg} 
                   alt="Plumbing technician with pipe wrench working under kitchen sink" 
                   className="scenarioCardImg" 
                   referrerPolicy="no-referrer"
@@ -560,7 +566,7 @@ export default function App() {
             <div className="scenarioCard">
               <div>
                 <img 
-                  src="/src/assets/images/scenario_roof_worker_1790858360425.jpg" 
+                  src={scenarioRoofWorkerImg} 
                   alt="HVAC technician on steep roof with safety harness" 
                   className="scenarioCardImg" 
                   referrerPolicy="no-referrer"
@@ -585,7 +591,7 @@ export default function App() {
             <div className="scenarioCard">
               <div>
                 <img 
-                  src="/src/assets/images/scenario_vacation_freedom_1790858369722.jpg" 
+                  src={scenarioVacationFreedomImg} 
                   alt="Craftsman relaxing on vacation with family" 
                   className="scenarioCardImg" 
                   referrerPolicy="no-referrer"
