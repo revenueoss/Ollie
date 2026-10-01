@@ -1,0 +1,6 @@
+{
+  "name": "Foreman — Revenue Operations for Trades",
+  "description": "Managed revenue operations for established US plumbing, HVAC, electrical, roofing, and restoration businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
